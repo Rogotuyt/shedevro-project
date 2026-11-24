@@ -18,11 +18,14 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip             autoconf libtool pkg-config zlib1g-dev libncurses5-dev             libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev             build-essential imagemagick
+          sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip \
+            autoconf libtool pkg-config zlib1g-dev libncurses5-dev \
+            libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev \
+            build-essential librsvg2-bin
       - name: Prepare launcher icon
         run: |
           mkdir -p assets
-          convert -background none assets/icon.svg -resize 512x512 assets/icon.png
+          rsvg-convert -w 512 -h 512 assets/icon.svg > assets/icon.png
       - name: Install Buildozer
         run: |
           python3 -m pip install --user --upgrade pip
