@@ -62,7 +62,7 @@ class Main_app(App):
             btn.text = 'Ты'
             self.hod = 'Ты'
         elif btn.text == 'Ты':
-            btn.text == 'X/O'
+            btn.text = 'X/O'
             self.hod = 'X/O'
         self.reset(btn)
 
@@ -114,7 +114,6 @@ class Main_app(App):
 
     def line_draw(self,b1,b2,b3):
 
-        x1,y1 =self.button_pole[b1].to_window(self.button_pole[b1].center_x,self.button_pole[b1].center_y)
         x2,y2 =self.button_pole[b2].to_window(self.button_pole[b2].center_x,self.button_pole[b2].center_y)
         x3,y3 =self.button_pole[b3].to_window(self.button_pole[b3].center_x,self.button_pole[b3].center_y)
 
