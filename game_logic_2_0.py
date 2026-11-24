@@ -60,14 +60,14 @@ class Game_logic():
         a = self.create_key(pl=pl)
         all_hd = self.svoboda()
         q = self.q_tab
+        if not all_hd:
+            return None
         if a not in q:
             q[a] = {l:0 for l in all_hd}
 
         if eps > random.random():
             return random.choice(all_hd)
         else:
-            if not all_hd:
-                return None
             a = max(all_hd, key= lambda call: q[a][call])
             return a
 
