@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#06132d"/><stop offset=".55" stop-color="#092b62"/><stop offset="1" stop-color="#07142c"/></linearGradient>
+ <linearGradient id="cyan" x2="0" y2="1"><stop stop-color="#aaffff"/><stop offset=".5" stop-color="#17e9f4"/><stop offset="1" stop-color="#007cae"/></linearGradient>
+ <linearGradient id="orange" x2="0" y2="1"><stop stop-color="#fff0a5"/><stop offset=".45" stop-color="#ff9b3d"/><stop offset="1" stop-color="#ff4c32"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="512" height="512" rx="92" fill="url(#bg)"/>
+<rect x="22" y="22" width="468" height="468" rx="76" fill="none" stroke="#2c78bd" stroke-width="5"/>
+<path d="M256 70 422 165 422 350 256 445 90 350 90 165Z" fill="none" stroke="#1a5794" stroke-width="4" opacity=".7"/>
+<path d="M160 110 352 302M352 110 160 302" stroke="url(#orange)" stroke-width="24" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M175 110 352 287M337 110 160 287" stroke="#ffcf8a" stroke-width="7" stroke-linecap="round"/>
+<circle cx="158" cy="300" r="75" fill="none" stroke="url(#cyan)" stroke-width="23" filter="url(#glow)"/>
+<circle cx="158" cy="300" r="58" fill="none" stroke="#8fffff" stroke-width="5"/>
+<g fill="none" stroke="#55eaff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+ <path d="M256 354v-25m0 25c-14-18-36-6-36 10-18 8-14 34 1 38-4 20 22 30 35 12m0-60c14-18 36-6 36 10 18 8 14 34-1 38 4 20-22 30-35 12m0-60v75"/>
+ <path d="M256 329v-16m0 0-12-10m12 10 12-10M215 372h-18m100 0h18M222 405l-12 12m80-12 12 12"/>
+ <circle cx="244" cy="303" r="5"/><circle cx="268" cy="303" r="5"/>
+</g>
+<g fill="none" stroke="#2785c5" stroke-width="4" opacity=".7"><path d="M70 100h60l25 25M382 70h55v55M70 410h75l18-18M370 430h70v-55"/></g>
+<text x="256" y="470" font-family="Arial,sans-serif" font-size="45" font-weight="900" text-anchor="middle" fill="#e8fbff" stroke="#0b4778" stroke-width="2" paint-order="stroke">XvsO</text>
+</svg>
