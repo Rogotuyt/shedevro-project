@@ -22,10 +22,6 @@ jobs:
             autoconf libtool pkg-config zlib1g-dev libncurses5-dev \
             libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev \
             build-essential librsvg2-bin
-      - name: Prepare launcher icon
-        run: |
-          mkdir -p assets
-          rsvg-convert -w 512 -h 512 assets/icon.svg > assets/icon.png
       - name: Install Buildozer
         run: |
           python3 -m pip install --user --upgrade pip
